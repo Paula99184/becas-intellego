@@ -1,30 +1,259 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Becas Colegio Intellego</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .content {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Becas Internacionales – Intellego</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
-        <h1>Becas del Colegio Intellego</h1>
-        <p>Bienvenidos a la página oficial de becas del Colegio Intellego.</p>
-        <p>Aquí encontrarás información sobre cómo aplicar, requisitos y fechas importantes.</p>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">🎓 Intellego Becas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#becas">Becas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#universidades">Universidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#perfil">Crear Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-hero text-white text-center" id="inicio">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold">¡Bienvenido!</h1>
+      <p class="lead">Aquí podrás encontrar diferentes becas que ofrece el Colegio Intellego Bilingual School.</p>
+      <a href="#becas" class="btn btn-warning btn-lg mt-3">Descubre las becas</a>
+    </div>
+  </header>
+
+  <!-- Sección Becas -->
+  <section id="becas" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Tipos de Becas</h2>
+      <div class="row">
+        <!-- Beca Académica -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Académicas</h5>
+              <p>Para estudiantes con alto promedio y excelencia académica.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Beca Deportiva -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Deportivas</h5>
+              <p>Para atletas con logros competitivos regionales o nacionales.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Beca por Mérito -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Por Mérito</h5>
+              <p>Liderazgo, voluntariado o impacto social demostrado.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Beca de Investigación -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Investigación</h5>
+              <p>Proyectos científicos o técnicos en universidades extranjeras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Universidades -->
+  <section id="universidades" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Universidades con Becas</h2>
+      <div class="row">
+        <!-- UFM -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://www.ufm.edu/img/logo-ufm.png" class="card-img-top" alt="UFM Logo">
+            <div class="card-body">
+              <h5 class="card-title">Universidad Francisco Marroquín</h5>
+              <p class="card-text">Fundada en 1971, ofrece programas en Derecho, Medicina, Economía y más.</p>
+              <a href="https://www.ufm.edu" class="btn btn-primary">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+        <!-- UVG -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://www.uvg.edu.gt/sites/default/files/2021-02/UVG_logo.png" class="card-img-top" alt="UVG Logo">
+            <div class="card-body">
+              <h5 class="card-title">Universidad del Valle de Guatemala</h5>
+              <p class="card-text">Destacada en ciencias, ingeniería y tecnología. Reconocida por su excelencia académica.</p>
+              <a href="https://www.uvg.edu.gt" class="btn btn-success">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+        <!-- URL -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://www.url.edu.gt/sites/default/files/2021-04/Logo%20URL%20-%20Color.png" class="card-img-top" alt="URL Logo">
+            <div class="card-body">
+              <h5 class="card-title">Universidad Rafael Landívar</h5>
+              <p class="card-text">Con una sólida formación en humanidades y ciencias sociales.</p>
+              <a href="https://www.url.edu.gt" class="btn btn-danger">Visitar sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crear Perfil -->
+  <section id="perfil" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Crea tu Perfil</h2>
+      <p class="text-center">Regístrate para recibir información personalizada sobre becas que se ajusten a tu perfil.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="perfilForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="intereses" class="form-label">Áreas de Interés</label>
+              <select class="form-select" id="intereses" required>
+                <option value="academica">Académica</option>
+                <option value="deportiva">Deportiva</option>
+                <option value="investigacion">Investigación</option>
+                <option value="merito">Por Mérito</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Crear Perfil</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="row g-3" id="contactForm">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre completo" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning">Enviar Mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 Intellego Bilingual School - Profesor Denis Chajón</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+/* Efecto al pasar el mouse por botones */
+.btn:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto suave para las tarjetas */
+.card {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones con fade-in al hacer scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animaciones en las secciones */
+section {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// Activar animación fade-in en scroll
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.3,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+<section id="becas" class="py-5 fade-in">
+  ...
+</section>
+<div class="col-md-3 mb-4 fade-in">
+  <div class="card h-100 shadow-sm">
+    ...
+  </div>
+</div>
